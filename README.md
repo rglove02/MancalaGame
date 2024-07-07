@@ -1,7 +1,5 @@
 # Mancala Game
 
-Simple overview of use/purpose.
-
 ## Description
 A text-based version recreation of the classic Mancala board game in Java. It provides a command-line interface for playing the game between two players. The game follows the standard rules of Mancala and provides a comprehensive set of features, including stone movement, capturing, and winning conditions.
 
