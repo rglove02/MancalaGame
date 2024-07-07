@@ -1,0 +1,16 @@
+## ChatGPT code Review of Mancala Game
+
+# Overall Thoughts
+I used ChatGPT to write/help me write the mancala game. I found that you had to be very specific to the AI to get it to have the right methods and classes and even that it did not do all of them.
+
+The Mancala game solution that the AI created, demonstrates a solid foundation in implementing the game's core logic including an outline for the classes, variables, getters and setters. However, there is room for improvement in terms of code readability, exception handling, logic and user interaction. I found when it came to the more complicated methods like moveStones and distributeStones it does not work. By addressing these areas, the solution can become better. Expanding the test coverage will further enhance the code's correctness and reliability.
+
+# Functionality & Correctness
+1. Game Logic Implementation:
+The game provides most of the logic of the game with some logic errors. The code for the getters and setters are correct and the Ai did a good job at accurately making the classes for Pit, Player and Store. The TextUI code was also pretty good at getting input where needed and had good methods that would help with the game. Some things that were wrong includes getting stones into the stores as well as invalid moves. Implementation for the more complicated methods like distributingStones and moveStones is somewhat wrong. The methods does not have the exact purpose that it was supposed to and moving stones to stores needs improvment to work properly.
+
+2. Exception Handling:
+The exception classes like InvalidMoveException, PitNotFoundException, GameNotOverException, and NoSuchPlayerException have been correctly defined and thrown where needed. In some places it did miss some of the throws because the AI did not do some of the methods correctly as well as did not consider some exceptions. The exceptions that are thrown, are not handled properly in TextUI. This leads to the code implementing the wrong logic and not working as it is supposed to be played. An example is that the code accepts the wrong pit numbers and moves the stones even if it is the wrong player doing the moving.
+
+3. User Interface:
+The TextUI class provides a basic command-line interface for playing the game, allowing users to interact with the game effectively. It also has a good method in textUI that represents the board although it does have extra pits and not clearly show where the stores are. But it is good that the AI made it so thatafter each move it displays the board so that the players can see what it looks like as well as which side is for each player. The UI could be enhanced by adding more user prompts, providing more clear, detailed instructions like to tell which player is making the move (when entering the pit number). As well as checking for valid input and throwing exceptions/fixing them where necessary so that the user cannot enter an invalid pti number. This means that it need to throw an excaption and the handle it to get the input again.
